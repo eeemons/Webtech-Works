@@ -1,0 +1,123 @@
+.chinta {
+  /* logo */
+  height: 80px;
+  width: 80px;
+  padding: 30px 0px 0px 50px;
+}
+
+.sidebar a {
+  /* sidebar components */
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sidebar a:hover {
+  color: rgb(196, 2, 2);
+}
+.sidebar a:after {
+  /* sidebar transitions */
+  content: "";
+  position: absolute;
+  background-color: rgb(20, 132, 177);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.sidebar a:hover:after {
+  /* sidebar hover after transition */
+  width: 100%;
+}
+
+.top {
+  /* whole top arrangements */
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  flex-grow: 0;
+}
+.sidebar {
+  display: flex;
+}
+.navbar ul {
+  padding: 60px 0px 0px 40px;
+  font-weight: bold;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(20, 132, 177);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transform-origin: bottom right;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: rgb(196, 2, 2);
+}
+.navbar a:hover:after {
+  width: 100%;
+}
+
+.sidebar {
+  padding: 35px 0px 0px 0px;
+  font-size: large;
+  font-weight: bold;
+}
+.divider {
+  color: red;
+}
+
+.sidebar button {
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+  background: none;
+  font-size: 25px;
+}
+.sidebar input {
+  border-radius: 30px;
+  width: auto;
+  height: 45px;
+}
+
+.navbar article {
+  display: flex;
+  align-items: flex-end;
+  width: max-content;
+  /* background-color: cadetblue; */
+  flex-grow: 1;
+  max-width: 400px;
+}
+
+.navbar img {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  padding-left: 100px;
+}
